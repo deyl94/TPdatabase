@@ -44,18 +44,18 @@ urlpatterns = patterns('',
 
 
     # Thread
-    url(r'^db/api/thread/close/$', 'forumAPI.Views.thread.close', name='close_thread'),
-    url(r'^db/api/thread/create/$', 'forumAPI.Views.thread.create', name='create_thread'),
-    url(r'^db/api/thread/details/$', 'forumAPI.Views.thread.details', name='details_thread'),
-    url(r'^db/api/thread/list/$', 'forumAPI.Views.thread.thread_list', name='list_thread'),
-    url(r'^db/api/thread/listPosts/$', 'forumAPI.Views.thread.list_posts', name='list_posts_thread'),
-    url(r'^db/api/thread/open/$', 'forumAPI.Views.thread.open', name='open_thread'),
-    url(r'^db/api/thread/remove/$', 'forumAPI.Views.thread.remove', name='remove_thread'),
-    url(r'^db/api/thread/restore/$', 'forumAPI.Views.thread.restore', name='restore_thread'),
-    url(r'^db/api/thread/subscribe/$', 'forumAPI.Views.thread.subscribe', name='subscribe_thread'),
-    url(r'^db/api/thread/unsubscribe/$', 'forumAPI.Views.thread.unsubscribe', name='unsubscribe_thread'),
-    url(r'^db/api/thread/update/$', 'forumAPI.Views.thread.update', name='update_thread'),
-    url(r'^db/api/thread/vote/$', 'forumAPI.Views.thread.vote', name='vote_thread'),
+    url(r'^db/api/thread/close/$', 'forumAPI.views.thread.close', name='close_thread'),
+    url(r'^db/api/thread/create/$', 'forumAPI.views.thread.create', name='create_thread'),
+    url(r'^db/api/thread/details/$', 'forumAPI.views.thread.details', name='details_thread'),
+    url(r'^db/api/thread/list/$', 'forumAPI.views.thread.thread_list', name='list_thread'),
+    url(r'^db/api/thread/listPosts/$', 'forumAPI.views.thread.list_posts', name='list_posts_thread'),
+    url(r'^db/api/thread/open/$', 'forumAPI.views.thread.open', name='open_thread'),
+    url(r'^db/api/thread/remove/$', 'forumAPI.views.thread.remove', name='remove_thread'),
+    url(r'^db/api/thread/restore/$', 'forumAPI.views.thread.restore', name='restore_thread'),
+    url(r'^db/api/thread/subscribe/$', 'forumAPI.views.thread.subscribe', name='subscribe_thread'),
+    url(r'^db/api/thread/unsubscribe/$', 'forumAPI.views.thread.unsubscribe', name='unsubscribe_thread'),
+    url(r'^db/api/thread/update/$', 'forumAPI.views.thread.update', name='update_thread'),
+    url(r'^db/api/thread/vote/$', 'forumAPI.views.thread.vote', name='vote_thread'),
 
     # TRUNCATE базы
     url(r'^db/clear/$', 'forumAPI.db.dbFunctions.clear', name='clear')
